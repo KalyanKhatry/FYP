@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/39b5c39a62.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section id="header">
+      <img class="logo" src="logo3.png" />
+      <div class="header-conatiner">
+        <ul>
+          <li>
+            <a href="dashboard.html"
+              ><i class="fa-solid fa-house"></i> Dashboard</a
+            >
+          </li>
+          <li>
+            <a href="result.html"
+              ><i class="fa-solid fa-square-poll-vertical"></i> Result</a
+            >
+          </li>
+          <li>
+            <a href="patient.html"
+              ><i class="fa-sharp fa-solid fa-clipboard"></i> Patient List</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p>logo</p>
+    </section>
+    <h3>Information</h3>
+
+    <form>
+      <div class="name-container">
+        <div class="name-labels">
+          <label for="first-name">First Name</label>
+          <label for="last-name">Last Name</label>
+        </div>
+        <div class="name-inputs">
+          <input type="text" id="first-name" name="first-name" />
+          <input type="text" id="last-name" name="last-name" />
+        </div>
+      </div>
+
+      <div class="radio-container">
+        <label for="sex">Sex:</label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="sex" value="male" required />
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="sex" value="female" />
+      </div>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" required />
+
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required />
+
+      <label for="contact-number">Contact Number</label>
+      <input type="text" id="contact-number" name="contact-number" required />
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
